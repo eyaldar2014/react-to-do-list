@@ -1,22 +1,240 @@
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 :root {
-  --blue: #004E7C;
-  --red: #B73225;
-  --green: #266150;
+    --blue: #004E7C;
+    --red: #B73225;
+    --green: #266150;
 }
 
 body {
-  background: tan;
-}
-.btn {
-  /*width: 100px;*/
-  /*height: 30px;*/
-  /*background: #4CAF50;*/
-  /*color: #282c34;*/
+    background: tan;
 }
 
+.btn {
+    /*width: 100px;*/
+    /*height: 30px;*/
+    /*background: #4CAF50;*/
+    /*color: #282c34;*/
+}
+
+/*headContainer ---------------------------------------------------------------------------------*/
+.headContainer {
+    position: relative;
+
+}
+
+.clock {
+    position: absolute;
+    margin-top: -40px;
+    left: calc(100% - 200px);
+    padding: 10px;
+    min-width: 150px;
+    min-height: 40px;
+    background: var(--red);
+    color: white;
+    text-align: center;
+}
+
+.date {
+    position: absolute;
+    margin-top: -40px;
+    left: calc(100% - 400px);
+    padding: 10px;
+    min-width: 150px;
+    min-height: 40px;
+    background: var(--red);
+    color: white;
+    text-align: center;
+}
+
+.title {
+    margin: auto;
+    margin-top: 40px;
+    padding: 10px;
+    width: 260px;
+    min-height: 40px;
+    background: var(--blue);
+    color: white;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.profile {
+    margin-top: 10px;
+    background: var(--red);
+    padding: 30px;
+    margin-left: 20px;
+    display: flex;
+    max-width: 200px;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.8rem;
+    opacity: 0.9;
+    border: 1px solid black;
+    border-radius: 25px;
+}
+
+.burgerContainer {
+    position: absolute;
+    margin-top: -64px;
+    left: calc(100% - 31px);
+    padding: 2px;
+    width: 27px;
+    height: 24px;
+    /*background: #B73225;*/
+    opacity: 0.7;
+}
+
+.burger {
+    width: 19px;
+    margin: 2px;
+    height: 4px;
+    background: black;
+}
+
+
+/*notesHeader ---------------------------------------------------------------------------------*/
+.notesHeader{
+    margin: auto;
+    margin-top: 20px;
+    width: 800px;
+    background: grey;
+    height: 60px;
+}
+
+/*notes ---------------------------------------------------------------------------------*/
+/*notes Row ----------------------------------------------------------*/
+.notesContainerRow {
+    margin: auto;
+    margin-top: 20px;
+    width: 800px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.noteRow {
+    position: relative;
+    width: 100%px;
+    height: 60px;
+    background: var(--blue);
+    margin: 20px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    border-radius: 25px;
+    -moz-border-radius-topright: 0px;
+}
+
+.rowText {
+    margin: 0 30px;
+    height: 30px;
+    width: 350px;
+    overflow: hidden;
+    line-height: 30px;
+}
+
+.rowDate {
+    margin-right: 80px;
+}
+
+/*notes Grid ----------------------------------------------------------*/
+.noteGrid {
+    position: relative;
+    min-width: 100px;
+    height: 250px;
+    background: var(--blue);
+    margin: 20px;
+
+    padding: 30px;
+    /*display: flex;*/
+    /*justify-content: space-around;*/
+    /*align-items: center;*/
+
+    border-radius: 25px;
+    -moz-border-radius-topright: 0px;
+}
+
+.notesContainerGrid {
+    margin: auto;
+    margin-top: 20px;
+    width: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/*.gridName{*/
+/*}*/
+.gridDate{
+    width: 100%;
+    text-align: end;
+}
+.gridText {
+    align-self: center;
+    margin: 20px;
+    height: 120px;
+    overflow: auto;
+}
+
+/*notes all ----------------------------------------------------------*/
+.noteBtnContainer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    width: 75px;
+    justify-content: space-between;
+}
+
+.noteBtn {
+    width: 25px;
+    hight: 25px;
+}
+
+.delete {
+    background: #B73225
+}
+
+.expand {
+    background: blue
+}
+
+.edit {
+    background: yellow
+}
+
+
+/*notesHeader ---------------------------------------------------------------------------------*/
+.notesHeader{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+}
+
+.btnHeadContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.search{
+    width:500px;
+    padding-left: 20px;
+}
+
+.addNote{
+    padding: 10px;
+    background: #266150;
+}
+.headBtn{
+    background: #266150;
+    color: white;
+    margin-top: -6px;
+    margin-bottom: 6px;
+    padding: 2px;
+}

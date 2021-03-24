@@ -1,7 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
 
-import TDList from './ToDoList)'
+import TDList from './components/ToDoList'
 
 function App() {
   return (
